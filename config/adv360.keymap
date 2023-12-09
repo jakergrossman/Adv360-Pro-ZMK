@@ -173,11 +173,21 @@
 
         default_layer {
             bindings = <
-&dollar_tilde  &sym_row_1     &sym_row_2  &sym_row_3  &sym_row_4  &sym_row_5  &kp K_COPY                                                              &kp K_CALCULATOR  &sym_row_6  &sym_row_7  &sym_row_8  &sym_row_9  &sym_row_0  &excl_pct
-&kp SLASH      &kp SEMICOLON  &kp COMMA   &kp PERIOD  &kp P       &kp Y       &kp K_PASTE                                                             &at_uptick        &kp F       &kp G       &kp C       &kp R       &kp L       &backslash_pound
-&lt 2 ESCAPE   &kp A          &kp O       &kp E       &kp U       &kp I       &kp K_CUT    &kp LCTRL      &kp LEFT_GUI      &kp RIGHT_ALT  &kp RCTRL  &pipe_grave       &kp D       &kp H       &kp T       &kp N       &kp S       &kp MINUS
-&kp LSHFT      &kp SQT        &kp Q       &kp J       &kp K       &kp X                                   &kp F18           &kp F20                                     &kp B       &kp M       &kp W       &kp V       &kp Z       &kp RIGHT_SHIFT
-&mo 4          &kp F13        &kp F14     &kp F15     &kp F16                 &kp SPACE    &kp BACKSPACE  &kp F17           &kp F19        &kp ENTER  &kp TAB                       &none       &none       &none       &none       &none
+&dollar_tilde  &sym_row_1     &sym_row_2  &sym_row_3  &sym_row_4  &sym_row_5  &kp LC(K_COPY)                                                             &kp K_CALCULATOR  &sym_row_6  &sym_row_7  &sym_row_8  &sym_row_9  &sym_row_0  &excl_pct
+&kp SLASH      &kp SEMICOLON  &kp COMMA   &kp PERIOD  &kp P       &kp Y       &kp LC(V)                                                                  &at_uptick        &kp F       &kp G       &kp C       &kp R       &kp L       &backslash_pound
+&lt 3 ESCAPE   &kp A          &kp O       &kp E       &kp U       &kp I       &kp LC(X)       &kp LCTRL      &kp LEFT_GUI      &kp RIGHT_ALT  &kp RCTRL  &pipe_grave       &kp D       &kp H       &kp T       &kp N       &kp S       &kp MINUS
+&kp LSHFT      &kp SQT        &kp Q       &kp J       &kp K       &kp X                                      &kp F18           &kp F20                                     &kp B       &kp M       &kp W       &kp V       &kp Z       &kp RIGHT_SHIFT
+&mo 5          &kp F13        &kp F14     &kp F15     &kp F16                 &kp SPACE       &kp BACKSPACE  &kp F17           &kp F19        &kp ENTER  &kp TAB                       &none       &none       &none       &none       &none
+            >;
+        };
+
+        stupid_copy_paste {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &kp LC(INSERT)                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp LS(INSERT)                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp LS(DELETE)  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                          &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans          &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
 
@@ -193,11 +203,11 @@
 
         fn {
             bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4    &kp F5        &kp F6      &none                                       &mo 3   &kp F7  &kp F8      &kp F9            &kp F10     &kp F11            &kp F12
-&trans  &trans  &trans  &trans    &trans        &kp K_UNDO  &tog 1                                      &none   &trans  &trans      &trans            &trans      &kp RIGHT          &trans
-&trans  &trans  &trans  &trans    &trans        &kp K_REDO  &none   &trans  &trans      &trans  &trans  &none   &none   &kp LEFT    &trans            &trans      &trans             &bl BL_OFF
-&trans  &trans  &trans  &kp DOWN  &kp UP_ARROW  &kp DELETE                  &none       &none                   &trans  &none       &none             &trans      &kp K_VOLUME_UP    &bt BT_CLR
-&trans  &trans  &trans  &trans    &trans                    &trans  &trans  &trans      &trans  &trans  &trans          &kp K_PREV  &kp K_PLAY_PAUSE  &kp K_NEXT  &kp K_VOLUME_DOWN  &kp K_VOLUME_DOWN
+&kp F1  &kp F2  &kp F3  &kp F4    &kp F5        &kp F6      &none                                       &mo 4   &kp F7  &kp F8      &kp F9            &kp F10     &kp F11            &kp F12
+&trans  &trans  &trans  &trans    &trans        &kp LC(Z)   &tog 2                                      &none   &trans  &trans      &trans            &trans      &kp RIGHT          &trans
+&trans  &trans  &trans  &trans    &trans        &kp LC(Y)   &none   &trans  &trans      &trans  &trans  &none   &none   &kp LEFT    &trans            &trans      &trans             &bl BL_OFF
+&trans  &trans  &trans  &kp DOWN  &kp UP_ARROW  &kp DELETE                  &none       &none                   &trans  &none       &none             &trans      &kp C_VOLUME_UP    &bt BT_CLR
+&trans  &trans  &trans  &trans    &trans                    &trans  &trans  &trans      &trans  &trans  &trans          &kp C_PREV  &kp C_PLAY_PAUSE  &kp C_NEXT  &kp C_VOLUME_DOWN  &trans
             >;
         };
 
