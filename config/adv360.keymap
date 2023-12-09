@@ -131,7 +131,7 @@
         pipe_grave: pipe_grave {
             compatible = "zmk,behavior-mod-morph";
             label = "PIPE_GRAVE";
-            bindings = <&kp PIPE>, <&kp CARET>;
+            bindings = <&kp PIPE>, <&kp GRAVE>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -141,7 +141,7 @@
         dollar_tilde: dollar_tilde {
             compatible = "zmk,behavior-mod-morph";
             label = "DOLLAR_TILDE";
-            bindings = <&kp DOLLAR>, <&kp TILDE>;
+            bindings = <&kp TILDE>, <&kp DOLLAR>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
