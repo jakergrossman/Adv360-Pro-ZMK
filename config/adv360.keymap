@@ -141,7 +141,7 @@
         dollar_tilde: dollar_tilde {
             compatible = "zmk,behavior-mod-morph";
             label = "DOLLAR_TILDE";
-            bindings = <&kp TILDE>, <&kp DOLLAR>;
+            bindings = <&kp DOLLAR>, <&kp TILDE>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
